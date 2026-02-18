@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,59 +7,76 @@ body {
   text-align: center;
 }
 
-nav {
-  padding: 1rem;
-  background: #000;
+a {
+  color: inherit;
 }
 
-nav a {
-  color: #fff;
+/* Navigation */
+.nav {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.nav a {
   margin: 0 1rem;
   text-decoration: none;
+  font-weight: 500;
 }
 
-nav a:hover {
+.nav a:hover {
   text-decoration: underline;
 }
 
-main {
-  padding: 4rem 1rem;
+/* Hero with video background */
+.video-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.button {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  background: #fff;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -2;
 }
 
-.button:hover {
-  background: #ccc;
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
 }
 
-.performances {
-  list-style: none;
-  padding: 0;
+/* Hero content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 6rem 1.5rem;
 }
 
-.performances li {
-  margin: 1rem 0;
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-footer {
-  padding: 1rem;
-  font-size: 0.9rem;
-  opacity: 0.7;
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.85;
 }
 
+/* Home page boxes */
 .home-boxes {
   display: flex;
   gap: 2rem;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   flex-wrap: wrap;
 }
 
@@ -89,4 +107,23 @@ footer {
   background: rgba(255, 255, 255, 0.9);
   color: #000;
   transform: translateY(-4px);
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-box {
+    width: 100%;
+    max-width: 320px;
+  }
 }
