@@ -1,6 +1,6 @@
 /* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Cutive Mono", monospace;
     margin: 0;
     background: #111;
     color: #f5f5f5;
@@ -82,8 +82,8 @@ a {
 
 .home-box {
     display: block;
-    width: 260px;
-    padding: 2rem;
+    width: 200px;
+    padding: 1.25rem;
     border: 2px solid rgba(255, 255, 255, 0.8);
     text-decoration: none;
     color: #fff;
@@ -123,6 +123,6 @@ footer {
     }
     .home-box {
         width: 100%;
-        max-width: 320px;
+        max-width: 260px;
     }
 }
