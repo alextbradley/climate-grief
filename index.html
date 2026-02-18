@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Climate Grief Project</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Climate Grief Project</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <header>
+        <nav class="nav">
+            <a href="./">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./performances.html">Performances</a>
+        </nav>
+    </header>
 
-  <header>
-    <nav class="nav">
-      <a href="./">Home</a>
-      <a href="./about.html">About</a>
-      <a href="./performances.html">Performances</a>
-    </nav>
-  </header>
+    <main class="hero video-hero">
+        <video
+            class="bg-video"
+            autoplay
+            muted
+            loop
+            playsinline
+        >
+            <source src="./video.mp4" type="video/mp4" />
+        </video>
+        <div class="overlay"></div>
 
-  <main class="hero video-hero">
-    <video
-      class="bg-video"
-      autoplay
-      muted
-      loop
-      playsinline
-    >
-      <source src="./video.mp4" type="video/mp4" />
-    </video>
+        <div class="hero-content">
+            <h1>The Climate Grief Project</h1>
+            <p class="subtitle">An art-science response to the climate crisis</p>
 
-    <div class="overlay"></div>
+            <div class="home-boxes">
+                <a href="./about.html" class="home-box" style="background:white;">
+                    <h2>About</h2>
+                    <p>Project background and intent</p>
+                </a>
 
-    <div class="hero-content">
-      <h1>The Climate Grief Project</h1>
-      <p class="subtitle">An art-science response to the climate crisis</p>
+                <a href="./performances.html" class="home-box" style="background:white;">
+                    <h2>Performances</h2>
+                    <p>Events, works, and presentations</p>
+                </a>
+            </div>
+        </div>
+    </main>
 
-      <div class="home-boxes">
-        <a href="./about.html" class="home-box">
-          <h2>About</h2>
-          <p>Project background and intent</p>
-        </a>
-
-        <a href="./performances.html" class="home-box">
-          <h2>Performances</h2>
-          <p>Events, works, and presentations</p>
-        </a>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2026 The Climate Grief Project</p>
-  </footer>
-
+    <footer>
+        <p>© 2026 The Climate Grief Project</p>
+    </footer>
 </body>
 </html>
